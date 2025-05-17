@@ -1,0 +1,576 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\TUTO_8.X.production.o
+cinit CODE 0 11 11 13 2 1
+text1 CODE 0 38F 38F 1F 2 1
+text2 CODE 0 36E 36E 21 2 1
+text3 CODE 0 24 24 128 2 1
+text4 CODE 0 2BE 2BE 5A 2 1
+text5 CODE 0 3FF 3FF 1 2 1
+text6 CODE 0 318 318 56 2 1
+text7 CODE 0 256 256 68 2 1
+text8 CODE 0 3C7 3C7 17 2 1
+text9 CODE 0 3ED 3ED A 2 1
+text10 CODE 0 3DE 3DE F 2 1
+text11 CODE 0 14C 14C 96 2 1
+maintext CODE 0 1E2 1E2 74 2 1
+cstackCOMMON COMMON 1 70 70 8 1 1
+cstackBANK0 BANK0 1 20 20 30 1 1
+cstackBANK1 BANK1 1 CA CA 24 1 1
+intentry CODE 0 4 4 A 2 1
+bssBANK0 BANK0 1 50 50 1 1 1
+bssBANK1 BANK1 1 A0 A0 2A 1 1
+strings STRING 0 3AE 3AE 19 2 1
+clrtext CODE 0 3F7 3F7 8 2 1
+bssCOMMON COMMON 1 78 78 3 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 E E 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 51-6F 1
+RAM EE-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 51-6F 1
+BANK1 EE-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 400-1FFF 2
+ENTRY 3-3 2
+ENTRY 400-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-3 2
+CODE 400-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 400-1FFF 2
+STRING 3-3 2
+STRING 400-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TUTO_8.X.production.o
+11 cinit CODE >441:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+11 cinit CODE >444:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+11 cinit CODE >500:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+12 cinit CODE >501:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+13 cinit CODE >502:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+14 cinit CODE >505:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+15 cinit CODE >506:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+16 cinit CODE >507:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+17 cinit CODE >510:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+18 cinit CODE >511:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+19 cinit CODE >512:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+1A cinit CODE >513:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+1B cinit CODE >514:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+20 cinit CODE >520:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+20 cinit CODE >522:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+21 cinit CODE >523:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+4 intentry CODE >61:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+14C text11 CODE >61:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+14C text11 CODE >62:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+152 text11 CODE >63:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+153 text11 CODE >66:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+157 text11 CODE >67:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+159 text11 CODE >67:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+15D text11 CODE >68:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+161 text11 CODE >68:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+165 text11 CODE >69:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+167 text11 CODE >69:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+16B text11 CODE >70:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+16D text11 CODE >70:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+171 text11 CODE >73:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+173 text11 CODE >73:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+177 text11 CODE >74:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+183 text11 CODE >75:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+184 text11 CODE >77:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+187 text11 CODE >77:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+189 text11 CODE >77:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+18D text11 CODE >78:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+199 text11 CODE >79:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+19B text11 CODE >81:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1A0 text11 CODE >81:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1A2 text11 CODE >81:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1A6 text11 CODE >82:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1B6 text11 CODE >83:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1BA text11 CODE >85:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1BD text11 CODE >85:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1BF text11 CODE >85:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1C3 text11 CODE >86:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1D5 text11 CODE >87:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1D9 text11 CODE >90:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3DE text10 CODE >35:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3DE text10 CODE >36:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E1 text10 CODE >37:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E2 text10 CODE >39:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E3 text10 CODE >40:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E4 text10 CODE >42:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E6 text10 CODE >44:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3E9 text10 CODE >45:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3EC text10 CODE >46:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3ED text9 CODE >49:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3EE text9 CODE >50:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3F4 text9 CODE >51:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3F6 text9 CODE >52:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3C7 text8 CODE >55:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3C8 text8 CODE >56:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3C9 text8 CODE >57:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3D5 text8 CODE >56:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3DD text8 CODE >59:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+256 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+256 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+260 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+264 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+268 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+26A text7 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+26B text7 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+26D text7 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+274 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+278 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+27C text7 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+27E text7 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+285 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+287 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+28B text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+28F text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+293 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+297 text7 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+29A text7 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+29E text7 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2A2 text7 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2A5 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2A6 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2A7 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2AD text7 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2AF text7 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2B5 text7 CODE >29:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+2BD text7 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\__lldiv.c
+318 text6 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+318 text6 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+31E text6 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+322 text6 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+324 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+325 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+327 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+32E text6 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+332 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+336 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+338 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+33C text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+340 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+344 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+348 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+34B text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+34F text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+353 text6 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+356 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+357 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+35D text6 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+35F text6 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+365 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+36D text6 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\llmod.c
+3FF text5 CODE >7:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\putch.c
+3FF text5 CODE >9:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\putch.c
+2BE text4 CODE >8:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2BE text4 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2C8 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2CE text4 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2CF text4 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2F6 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2FA text4 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+2FE text4 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+30F text4 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+315 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+317 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
+24 text3 CODE >1177:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+27 text3 CODE >1201:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+32 text3 CODE >1201:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+36 text3 CODE >1202:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+3C text3 CODE >1204:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+40 text3 CODE >1204:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+47 text3 CODE >1205:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+4D text3 CODE >1291:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+53 text3 CODE >1293:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+5B text3 CODE >1294:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+5C text3 CODE >1309:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+60 text3 CODE >1316:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+61 text3 CODE >1350:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+63 text3 CODE >1351:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+64 text3 CODE >1353:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+65 text3 CODE >1354:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+66 text3 CODE >1355:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+68 text3 CODE >1355:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+6B text3 CODE >1355:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+6E text3 CODE >1439:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+76 text3 CODE >1439:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+7B text3 CODE >1456:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+8E text3 CODE >1457:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+8F text3 CODE >1470:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+A2 text3 CODE >1471:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+A3 text3 CODE >1493:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+A5 text3 CODE >1493:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+A8 text3 CODE >1493:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+AB text3 CODE >1497:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+B0 text3 CODE >1498:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+B1 text3 CODE >1525:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+B3 text3 CODE >1527:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+D3 text3 CODE >1528:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+F2 text3 CODE >1532:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+F6 text3 CODE >1532:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+100 text3 CODE >1534:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+118 text3 CODE >1533:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+11F text3 CODE >1589:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+127 text3 CODE >1589:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+12A text3 CODE >1806:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+134 text3 CODE >1811:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+14B text3 CODE >1814:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+36E text2 CODE >1817:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+371 text2 CODE >1822:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+373 text2 CODE >1826:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+374 text2 CODE >1830:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+37E text2 CODE >1826:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+388 text2 CODE >1826:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+38C text2 CODE >1835:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+38E text2 CODE >1840:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
+38F text1 CODE >9:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+392 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+394 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+396 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+398 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+39A text1 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+3A4 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+3AD text1 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_sprintf.c
+1E2 maintext CODE >92:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1E2 maintext CODE >94:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1E5 maintext CODE >95:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1E6 maintext CODE >96:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1E7 maintext CODE >97:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1E8 maintext CODE >100:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1EB maintext CODE >101:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1EC maintext CODE >102:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1ED maintext CODE >103:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1EE maintext CODE >106:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1F0 maintext CODE >107:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1F4 maintext CODE >108:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1F7 maintext CODE >109:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1F8 maintext CODE >112:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1FB maintext CODE >113:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1FC maintext CODE >114:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+1FD maintext CODE >117:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+202 maintext CODE >119:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+20C maintext CODE >124:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+211 maintext CODE >124:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+215 maintext CODE >124:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+219 maintext CODE >124:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+21C maintext CODE >127:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+23E maintext CODE >130:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+244 maintext CODE >133:D:\0-Youtube\0-Mirocontroller\LAB7\TUTO_8.X\newmain.c
+3F7 clrtext CODE >487:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3F7 clrtext CODE >488:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3F8 clrtext CODE >489:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3F8 clrtext CODE >490:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3F9 clrtext CODE >491:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3FA clrtext CODE >492:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3FB clrtext CODE >493:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3FC clrtext CODE >494:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3FD clrtext CODE >495:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+3FE clrtext CODE >496:C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 EE 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__end_of_UART_SendString 7BC 0 CODE 0 text8 dist/default/production\TUTO_8.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 36 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+_TMR2 11 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_TXIF 64 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+_dbuf A0 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+_main 3C4 0 CODE 0 maintext dist/default/production\TUTO_8.X.production.o
+_prec C2 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+___stack_lo 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+start 1C 0 CODE 0 init C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_UART_Transmit 7EE 0 CODE 0 text9 dist/default/production\TUTO_8.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_vfpfcnvrt 298 0 CODE 0 text3 dist/default/production\TUTO_8.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_UART_SendString 78E 0 CODE 0 text8 dist/default/production\TUTO_8.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+___llmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt 48 0 CODE 0 text3 dist/default/production\TUTO_8.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___lldiv 57C 0 CODE 0 text7 dist/default/production\TUTO_8.X.production.o
+__end_of___llmod 6DC 0 CODE 0 text6 dist/default/production\TUTO_8.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+___stacklo 0 0 ABS 0 - C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+___lldiv@counter 2C 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+start_initialization 22 0 CODE 0 cinit dist/default/production\TUTO_8.X.production.o
+_TRISBbits 86 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+___lldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+clear_ram0 7EE 0 CODE 0 clrtext dist/default/production\TUTO_8.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__pcstackBANK1 CA 0 BANK1 1 cstackBANK1 dist/default/production\TUTO_8.X.production.o
+_TMR2IF 61 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_TRISC6 43E 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_TRISC7 43F 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+fputc@fp 75 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 48 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 766 0 STRING 0 strings dist/default/production\TUTO_8.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 75C 0 CODE 0 text1 dist/default/production\TUTO_8.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 22 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_PORTBbits 6 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 1C 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 1C 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_ISR 298 0 CODE 0 text11 dist/default/production\TUTO_8.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__S0 400 0 ABS 0 - -
+__S1 EE 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+saved_w 7E 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+sprintf@fmt 3A 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__end_of_ISR 3C4 0 CODE 0 text11 dist/default/production\TUTO_8.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__stringtab 75C 0 STRING 0 strings dist/default/production\TUTO_8.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+main@loop_counter EA 0 BANK1 1 cstackBANK1 dist/default/production\TUTO_8.X.production.o
+UART_SendString@str 74 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+vfpfcnvrt@fmt 2D 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__ptext10 7BC 0 CODE 0 text10 dist/default/production\TUTO_8.X.production.o
+__ptext11 298 0 CODE 0 text11 dist/default/production\TUTO_8.X.production.o
+___lldiv 4AC 0 CODE 0 text7 dist/default/production\TUTO_8.X.production.o
+___llmod 630 0 CODE 0 text6 dist/default/production\TUTO_8.X.production.o
+__pmaintext 3C4 0 CODE 0 maintext dist/default/production\TUTO_8.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of__stringtab 768 0 STRING 0 strings dist/default/production\TUTO_8.X.production.o
+main@buffer CA 0 BANK1 1 cstackBANK1 dist/default/production\TUTO_8.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\TUTO_8.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Lend_init 1C 0 CODE 0 end_init -
+vfpfcnvrt@convarg 30 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 40 0 CODE 0 cinit dist/default/production\TUTO_8.X.production.o
+__Hintentry 1C 0 CODE 0 intentry -
+fputc@c 73 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___lldiv 20 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+?___llmod 20 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+vfprintf@fmt 36 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_UART_Init 7DA 0 CODE 0 text10 dist/default/production\TUTO_8.X.production.o
+vfpfcnvrt@ap 2E 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+vfpfcnvrt@cp 34 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+vfpfcnvrt@fp 2F 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__ptext1 71E 0 CODE 0 text1 dist/default/production\TUTO_8.X.production.o
+__ptext2 6DC 0 CODE 0 text2 dist/default/production\TUTO_8.X.production.o
+__ptext3 48 0 CODE 0 text3 dist/default/production\TUTO_8.X.production.o
+__ptext4 57C 0 CODE 0 text4 dist/default/production\TUTO_8.X.production.o
+__ptext5 7FE 0 CODE 0 text5 dist/default/production\TUTO_8.X.production.o
+__ptext6 630 0 CODE 0 text6 dist/default/production\TUTO_8.X.production.o
+__ptext7 4AC 0 CODE 0 text7 dist/default/production\TUTO_8.X.production.o
+__ptext8 78E 0 CODE 0 text8 dist/default/production\TUTO_8.X.production.o
+__ptext9 7DA 0 CODE 0 text9 dist/default/production\TUTO_8.X.production.o
+vfprintf@ap 37 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+vfprintf@fp 38 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+vfprintf@cfmt 39 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+_sprintf 71E 0 CODE 0 text1 dist/default/production\TUTO_8.X.production.o
+_vfprintf 6DC 0 CODE 0 text2 dist/default/production\TUTO_8.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 41 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+_UART_Transmit 7DA 0 CODE 0 text9 dist/default/production\TUTO_8.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_UART_Init 7BC 0 CODE 0 text10 dist/default/production\TUTO_8.X.production.o
+__end_of_vfprintf 71E 0 CODE 0 text2 dist/default/production\TUTO_8.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+___heap_lo 0 0 ABS 0 - C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+_interrupt_count1 7A 0 COMMON 1 bssCOMMON dist/default/production\TUTO_8.X.production.o
+_interrupt_count2 78 0 COMMON 1 bssCOMMON dist/default/production\TUTO_8.X.production.o
+_interrupt_count3 C8 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+_interrupt_count4 C6 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+_interrupt_count5 C4 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+__end_of__initialization 40 0 CODE 0 cinit dist/default/production\TUTO_8.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+UART_Transmit@data 73 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+___lldiv@quotient 28 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__Hend_init 22 0 CODE 0 end_init -
+___llmod@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+___llmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\TUTO_8.X.production.o
+vfpfcnvrt@c 35 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+sprintf@f 42 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+sprintf@s 40 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+__end_of_main 4AC 0 CODE 0 maintext dist/default/production\TUTO_8.X.production.o
+__end_of_fputc 630 0 CODE 0 text4 dist/default/production\TUTO_8.X.production.o
+?_sprintf 3A 0 BANK0 1 cstackBANK0 dist/default/production\TUTO_8.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__end_of_putch 800 0 CODE 0 text5 dist/default/production\TUTO_8.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\TUTO_8.X.production.o
+_flags 50 0 BANK0 1 bssBANK0 dist/default/production\TUTO_8.X.production.o
+_fputc 57C 0 CODE 0 text4 dist/default/production\TUTO_8.X.production.o
+_putch 7FE 0 CODE 0 text5 dist/default/production\TUTO_8.X.production.o
+_width C0 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\TUTO_8.X.production.o
+__initialization 22 0 CODE 0 cinit dist/default/production\TUTO_8.X.production.o
+__pbssBANK0 50 0 BANK0 1 bssBANK0 dist/default/production\TUTO_8.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\TUTO_8.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production\TUTO_8.X.production.o
+__pstrings 75C 0 STRING 0 strings dist/default/production\TUTO_8.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\PC-MAG~1\AppData\Local\Temp\xcAs8rg.\driver_tmp_17.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text8 0 3C7 78E 39 2
+cstackCOMMON 1 70 70 B 1
+cstackBANK0 1 20 20 31 1
+intentry 0 4 8 3AA 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 4E 1
+strings 0 3AE 75C 19 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
