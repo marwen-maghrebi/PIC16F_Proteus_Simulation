@@ -1,0 +1,114 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"27 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\03-UART\TUTO_04.X\newmain.c
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+"50
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+"57
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"67
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"75
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"85
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+"103
+[v _LED_Init LED_Init `(v  1 e 1 0 ]
+"112
+[v _main main `(v  1 e 1 0 ]
+"1059 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2420
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2519
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2660
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"2663
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"2747
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2816
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2846
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2921
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"2924
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
+"2981
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2984
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3020
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3035
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"112 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\03-UART\TUTO_04.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"119
+[v main@received_data received_data `[50]uc  1 a 50 0 ]
+"146
+} 0
+"67
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.26DCuc  1 p 2 1 ]
+"72
+} 0
+"57
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 0 ]
+"64
+} 0
+"50
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+{
+"54
+} 0
+"27
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+{
+"47
+} 0
+"85
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+{
+"88
+[v UART_Read_Text@received_char received_char `uc  1 a 1 5 ]
+"87
+[v UART_Read_Text@i i `uc  1 a 1 4 ]
+"85
+[v UART_Read_Text@buffer buffer `*.4uc  1 p 1 0 ]
+[v UART_Read_Text@max_length max_length `uc  1 p 1 1 ]
+"100
+} 0
+"75
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"82
+} 0
+"103
+[v _LED_Init LED_Init `(v  1 e 1 0 ]
+{
+"109
+} 0
