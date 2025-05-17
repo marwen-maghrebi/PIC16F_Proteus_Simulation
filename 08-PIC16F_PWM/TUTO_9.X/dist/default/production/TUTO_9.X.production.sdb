@@ -1,0 +1,65 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"31 D:\0-Youtube\0-Mirocontroller\LAB8\TUTO_9.X\newmain.c
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+"47
+[v _RGB_LED_Control RGB_LED_Control `(v  1 e 1 0 ]
+"56
+[v _main main `(v  1 e 1 0 ]
+"892 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"1080
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2450
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2453
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2876
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2879
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2906
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2963
+[v _TRISC0 TRISC0 `VEb  1 e 0 @1080 ]
+"2966
+[v _TRISC1 TRISC1 `VEb  1 e 0 @1081 ]
+"2969
+[v _TRISC2 TRISC2 `VEb  1 e 0 @1082 ]
+"56 D:\0-Youtube\0-Mirocontroller\LAB8\TUTO_9.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"73
+[v main@i_52 i `i  1 a 2 7 ]
+"68
+[v main@i i `i  1 a 2 5 ]
+"78
+} 0
+"47
+[v _RGB_LED_Control RGB_LED_Control `(v  1 e 1 0 ]
+{
+[v RGB_LED_Control@red_intensity red_intensity `uc  1 a 1 wreg ]
+[v RGB_LED_Control@red_intensity red_intensity `uc  1 a 1 wreg ]
+[v RGB_LED_Control@green_intensity green_intensity `uc  1 p 1 0 ]
+[v RGB_LED_Control@blue_intensity blue_intensity `uc  1 p 1 1 ]
+[v RGB_LED_Control@red_intensity red_intensity `uc  1 a 1 2 ]
+"51
+} 0
+"31
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+{
+"38
+} 0
