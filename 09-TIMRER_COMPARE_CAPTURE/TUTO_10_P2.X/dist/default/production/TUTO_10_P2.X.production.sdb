@@ -1,0 +1,66 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"30 D:\0-Youtube\0-Mirocontroller\LAB9\TUTO_10_P2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"45
+[v _Compare_Init Compare_Init `(v  1 e 1 0 ]
+"69
+[v _ISR ISR `II(v  1 e 1 0 ]
+"634 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"885
+[v _CCPR1 CCPR1 `VEus  1 e 2 @21 ]
+"2438
+[v _CCP1IE CCP1IE `VEb  1 e 0 @1122 ]
+"2441
+[v _CCP1IF CCP1IF `VEb  1 e 0 @98 ]
+"2444
+[v _CCP1M0 CCP1M0 `VEb  1 e 0 @184 ]
+"2447
+[v _CCP1M1 CCP1M1 `VEb  1 e 0 @185 ]
+"2450
+[v _CCP1M2 CCP1M2 `VEb  1 e 0 @186 ]
+"2453
+[v _CCP1M3 CCP1M3 `VEb  1 e 0 @187 ]
+"2573
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2633
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2720
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2861
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"2864
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"2888
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"2897
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"30 D:\0-Youtube\0-Mirocontroller\LAB9\TUTO_10_P2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"42
+} 0
+"45
+[v _Compare_Init Compare_Init `(v  1 e 1 0 ]
+{
+"66
+} 0
+"69
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"80
+} 0
