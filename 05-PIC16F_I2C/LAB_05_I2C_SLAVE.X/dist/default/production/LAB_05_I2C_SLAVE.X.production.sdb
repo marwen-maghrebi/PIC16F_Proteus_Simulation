@@ -1,0 +1,75 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"27 D:\0-Youtube\0-Mirocontroller\LAB5\LAB_05_I2C_SLAVE.X\slave.c
+[v _main main `(v  1 e 1 0 ]
+"40
+[v _ISR ISR `II(v  1 e 1 0 ]
+"53
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+"216 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2417
+[v _BF BF `VEb  1 e 0 @1184 ]
+"2501
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"2555
+[v _D_nA D_nA `VEb  1 e 0 @1189 ]
+"2573
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2633
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2807
+[v _R_nW R_nW `VEb  1 e 0 @1186 ]
+"2825
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"3083
+[v _nRBPU nRBPU `VEb  1 e 0 @1039 ]
+"27 D:\0-Youtube\0-Mirocontroller\LAB5\LAB_05_I2C_SLAVE.X\slave.c
+[v _main main `(v  1 e 1 0 ]
+{
+"38
+} 0
+"53
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+{
+[v I2C_Slave_Init@address address `uc  1 a 1 wreg ]
+[v I2C_Slave_Init@address address `uc  1 a 1 wreg ]
+[v I2C_Slave_Init@address address `uc  1 a 1 3 ]
+"64
+} 0
+"40
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"43
+[v ISR@dummy dummy `VEuc  1 a 1 2 ]
+"51
+} 0

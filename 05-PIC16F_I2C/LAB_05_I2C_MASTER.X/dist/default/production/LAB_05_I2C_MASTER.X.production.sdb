@@ -1,0 +1,106 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"37 D:\0-Youtube\0-Mirocontroller\LAB5\LAB_05_I2C_MASTER.X\master.c
+[v _main main `(v  1 e 1 0 ]
+"54
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"63
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+"67
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"72
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"88
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"94
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"101
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"340 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"37 D:\0-Youtube\0-Mirocontroller\LAB5\LAB_05_I2C_MASTER.X\master.c
+[v _main main `(v  1 e 1 0 ]
+{
+"52
+} 0
+"94
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Write@data data `uc  1 a 1 0 ]
+"99
+} 0
+"72
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"75
+} 0
+"67
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"70
+} 0
+"101
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+"102
+[v I2C_Read@data data `uc  1 a 1 0 ]
+"109
+} 0
+"88
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+{
+"92
+} 0
+"63
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+{
+"65
+} 0
+"54
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"61
+} 0
