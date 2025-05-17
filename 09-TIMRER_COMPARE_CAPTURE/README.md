@@ -15,7 +15,7 @@ Each project focuses on different use cases, providing practical insight into re
 This project configures the **CCP1 module in Capture Mode** to detect external events. When the captured value equals **9**, it toggles an LED connected to **RC3**. The captured value is displayed on **PORTB**, and the real-time value of **Timer1** is displayed on **PORTD**.
 
 ### Hardware Requirements  
-![Capture Mode Circuit](circuit_capture.png)  
+![Capture Mode Circuit](circuit.png)  
 - PIC16F877A Microcontroller  
 - LED (connected to RC3)  
 - External signal source (pulse to CCP1)  
